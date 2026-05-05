@@ -32,53 +32,69 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
         }
 
-        .file-block {
-            margin-bottom: 32px;
+        /* ===== 主程序 ===== */
+        .main-file .filename {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 22px;
         }
 
-        .file-block:last-child {
-            margin-bottom: 0;
+        .main-file .btn {
+            padding: 16px 0;
+            font-size: 16px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.85);
+            color: #000;
+            font-weight: bold;
+            border: none;
+        }
+
+        .main-file .btn:hover {
+            background: #ffffff;
+        }
+
+        /* ===== 普通文件 ===== */
+        .file-block {
+            margin-top: 28px;
         }
 
         .filename {
-            font-size: 16px;
-            color: #ccc;
-            margin-bottom: 18px;
-            line-height: 1.5;
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 14px;
         }
 
         .btn-group {
             display: flex;
             flex-direction: column;
-            gap: 14px;
-            margin-bottom: 12px;
+            gap: 10px;
         }
 
         .btn {
-            padding: 14px 0;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: #fff;
+            padding: 11px 0;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #ccc;
             text-decoration: none;
-            font-size: 15px;
-            transition: all 0.25s ease;
-            background: rgba(255, 255, 255, 0.05);
+            font-size: 13px;
+            background: rgba(255, 255, 255, 0.04);
             text-align: center;
+            transition: all 0.25s ease;
         }
 
         .btn:hover {
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.35);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.25);
         }
 
         .info {
-            font-size: 13px;
-            color: #888;
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
         }
 
         .pwd {
             color: #ffd166;
-            font-weight: bold;
         }
 
         @media (min-width: 480px) {
@@ -93,32 +109,42 @@
 </head>
 <body>
     <div class="card">
-        <!-- 文件 1 -->
-        <div class="file-block">
+        <!-- 主程序 -->
+        <div class="file-block main-file">
             <div class="filename">v1.2.2 助手（32位）</div>
             <div class="btn-group">
                 <a class="btn" href="https://github.com/wsr-de-youxixiaowu/wsr-de-youxixiaowu.github.io/raw/main/v1.2.2%20%E5%8A%A9%E6%89%8B-32%E4%BD%8D.exe" target="_blank">GitHub 下载</a>
                 <a class="btn" href="https://wwbus.lanzouv.com/iF3c23oryvkf" target="_blank">蓝奏云备用</a>
             </div>
-            <div class="info">备用下载提取码：<span class="pwd">83yh</span></div>
+            <div class="info">备用提取码：<span class="pwd">83yh</span></div>
         </div>
 
-        <!-- 文件 2 -->
+        <!-- 铁锈1 -->
         <div class="file-block">
-            <div class="filename">新增文件 1（214MB）</div>
+            <div class="filename">铁锈1</div>
+            <div class="btn-group">
+                <a class="btn" href="https://wwbus.lanzouv.com/iZc5O3os5ila" target="_blank">蓝奏云下载</a>
+            </div>
+            <div class="info">提取码：<span class="pwd">684f</span></div>
+        </div>
+
+        <!-- 铁锈2 -->
+        <div class="file-block">
+            <div class="filename">铁锈2</div>
             <div class="btn-group">
                 <a class="btn" href="https://wwbus.lanzouv.com/iNsw83os5pbc" target="_blank">蓝奏云下载</a>
             </div>
             <div class="info">提取码：<span class="pwd">aioj</span></div>
         </div>
 
-        <!-- 文件 3 -->
+        <!-- 解压工具 -->
         <div class="file-block">
-            <div class="filename">新增文件 2</div>
+            <div class="filename">解压工具</div>
             <div class="btn-group">
-                <a class="btn" href="https://wwbus.lanzouv.com/iZc5O3os5ila" target="_blank">蓝奏云下载</a>
+                <a class="btn" href="https://github.com/wsr-de-youxixiaowu/wsr-de-youxixiaowu.github.io/raw/main/360zip_npclm_sembing100028.exe" target="_blank">GitHub 下载</a>
+                <a class="btn" href="https://wwbus.lanzouv.com/isR3S3osaphi" target="_blank">蓝奏云备用</a>
             </div>
-            <div class="info">提取码：<span class="pwd">684f</span></div>
+            <div class="info">备用提取码：<span class="pwd">2etb</span></div>
         </div>
     </div>
 </body>
