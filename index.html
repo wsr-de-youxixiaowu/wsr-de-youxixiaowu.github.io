@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>v1.2.2 助手下载</title>
+    <title>文件下载中心</title>
     <style>
         * {
             margin: 0;
@@ -32,10 +32,18 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
         }
 
+        .file-block {
+            margin-bottom: 32px;
+        }
+
+        .file-block:last-child {
+            margin-bottom: 0;
+        }
+
         .filename {
             font-size: 16px;
             color: #ccc;
-            margin-bottom: 28px;
+            margin-bottom: 18px;
             line-height: 1.5;
         }
 
@@ -43,6 +51,7 @@
             display: flex;
             flex-direction: column;
             gap: 14px;
+            margin-bottom: 12px;
         }
 
         .btn {
@@ -54,6 +63,7 @@
             font-size: 15px;
             transition: all 0.25s ease;
             background: rgba(255, 255, 255, 0.05);
+            text-align: center;
         }
 
         .btn:hover {
@@ -62,7 +72,6 @@
         }
 
         .info {
-            margin-top: 22px;
             font-size: 13px;
             color: #888;
         }
@@ -84,21 +93,32 @@
 </head>
 <body>
     <div class="card">
-        <div class="filename">
-            v1.2.2 助手（32位）
+        <!-- 文件 1 -->
+        <div class="file-block">
+            <div class="filename">v1.2.2 助手（32位）</div>
+            <div class="btn-group">
+                <a class="btn" href="https://github.com/wsr-de-youxixiaowu/wsr-de-youxixiaowu.github.io/raw/main/v1.2.2%20%E5%8A%A9%E6%89%8B-32%E4%BD%8D.exe" target="_blank">GitHub 下载</a>
+                <a class="btn" href="https://wwbus.lanzouv.com/iF3c23oryvkf" target="_blank">蓝奏云备用</a>
+            </div>
+            <div class="info">备用下载提取码：<span class="pwd">83yh</span></div>
         </div>
 
-        <div class="btn-group">
-            <a class="btn" href="https://github.com/wsr-de-youxixiaowu/wsr-de-youxixiaowu.github.io/raw/main/v1.2.2%20%E5%8A%A9%E6%89%8B-32%E4%BD%8D.exe" target="_blank">
-                GitHub 下载
-            </a>
-            <a class="btn" href="https://wwbus.lanzouv.com/iF3c23oryvkf" target="_blank">
-                蓝奏云备用
-            </a>
+        <!-- 文件 2 -->
+        <div class="file-block">
+            <div class="filename">新增文件 1（214MB）</div>
+            <div class="btn-group">
+                <a class="btn" href="https://wwbus.lanzouv.com/iNsw83os5pbc" target="_blank">蓝奏云下载</a>
+            </div>
+            <div class="info">提取码：<span class="pwd">aioj</span></div>
         </div>
 
-        <div class="info">
-            备用下载提取码：<span class="pwd">83yh</span>
+        <!-- 文件 3 -->
+        <div class="file-block">
+            <div class="filename">新增文件 2</div>
+            <div class="btn-group">
+                <a class="btn" href="https://wwbus.lanzouv.com/iZc5O3os5ila" target="_blank">蓝奏云下载</a>
+            </div>
+            <div class="info">提取码：<span class="pwd">684f</span></div>
         </div>
     </div>
 </body>
