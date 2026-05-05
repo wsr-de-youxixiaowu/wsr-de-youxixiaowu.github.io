@@ -3,65 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>软件下载中心</title>
+    <title>v1.2.2 助手下载</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: "Microsoft YaHei", sans-serif;
         }
-        body{
-            background:#000;
-            color:#fff;
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:20px;
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
         }
-        .container{
-            width:100%;
-            max-width:500px;
-            text-align:center;
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 36px 28px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
         }
-        h1{
-            font-size:26px;
-            margin-bottom:30px;
-            font-weight:normal;
+
+        .filename {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 28px;
+            line-height: 1.5;
         }
-        .file{
-            margin:22px 0;
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
         }
-        .filename{
-            color:#aaa;
-            margin-bottom:10px;
-            font-size:15px;
+
+        .btn {
+            padding: 14px 0;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.25s ease;
+            background: rgba(255, 255, 255, 0.05);
         }
-        .btn{
-            display:inline-block;
-            padding:13px 32px;
-            border:1px solid #555;
-            color:#fff;
-            text-decoration:none;
-            border-radius:6px;
-            transition:0.2s;
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.35);
         }
-        .btn:hover{
-            background:#111;
-            border-color:#888;
+
+        .info {
+            margin-top: 22px;
+            font-size: 13px;
+            color: #888;
+        }
+
+        .pwd {
+            color: #ffd166;
+            font-weight: bold;
+        }
+
+        @media (min-width: 480px) {
+            .btn-group {
+                flex-direction: row;
+            }
+            .btn {
+                flex: 1;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>软件下载中心</h1>
-
-        <!-- 只保留你上传的助手文件 -->
-        <div class="file">
-            <div class="filename">v1.2.2 助手-32位.exe</div>
-            <a class="btn" href="https://github.com/wsr-de-youxixiaowu/wsr-de-youxixiaowu.github.io/raw/main/v1.2.2%20%E5%8A%A9%E6%89%8B-32%E4%BD%8D.exe">立即下载</a>
+    <div class="card">
+        <div class="filename">
+            v1.2.2 助手（32位）
         </div>
 
+        <div class="btn-group">
+            <a class="btn" href="https://github.com/wsr-de-youxixiaowu/wsr-de-youxixiaowu.github.io/raw/main/v1.2.2%20%E5%8A%A9%E6%89%8B-32%E4%BD%8D.exe" target="_blank">
+                GitHub 下载
+            </a>
+            <a class="btn" href="https://wwbus.lanzouv.com/iF3c23oryvkf" target="_blank">
+                蓝奏云备用
+            </a>
+        </div>
+
+        <div class="info">
+            备用下载提取码：<span class="pwd">83yh</span>
+        </div>
     </div>
 </body>
 </html>
