@@ -2,44 +2,72 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>软件下载中心</title>
     <style>
-        body{
-            background:#f5f5f5;
-            text-align:center;
-            padding-top:100px;
-            font-family:微软雅黑;
+        *{
             margin:0;
+            padding:0;
+            font-family: "Microsoft YaHei", sans-serif;
         }
-        .box{
-            background:#fff;
-            padding:40px;
-            border-radius:16px;
-            display:inline-block;
-            box-shadow:0 0 15px #ddd;
+        body{
+            background:#000;
+            color:#fff;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
         }
-        h1{color:#333; font-size:26px;}
-        .down{
+        .container{
+            width:100%;
+            max-width:500px;
+            text-align:center;
+        }
+        h1{
+            font-size:26px;
+            margin-bottom:30px;
+            font-weight:normal;
+        }
+        .file{
+            margin:22px 0;
+        }
+        .filename{
+            color:#aaa;
+            margin-bottom:10px;
+            font-size:15px;
+        }
+        .btn{
             display:inline-block;
-            margin-top:30px;
-            padding:15px 40px;
-            background:#007bff;
+            padding:13px 32px;
+            border:1px solid #555;
             color:#fff;
             text-decoration:none;
-            border-radius:8px;
-            font-size:18px;
+            border-radius:6px;
+            transition:0.2s;
         }
-        .down:hover{background:#0056b3;}
-        p{color:#666;}
+        .btn:hover{
+            background:#111;
+            border-color:#888;
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>专属软件下载</h1>
-        <p style="margin-top:20px;">大小：2168KB | 支持所有电脑</p>
-        <a class="down" href="https://wwbus.lanzouv.com/iywK03nu9vqd">立即下载</a>
-        <p style="margin-top:20px;font-size:14px;">下载密码：4rrh</p>
+    <div class="container">
+        <h1>软件下载中心</h1>
+
+        <!-- 你上传的助手文件 -->
+        <div class="file">
+            <div class="filename">v1.2.2 助手-32位.exe</div>
+            <a class="btn" href="https://github.com/wsr-de-youxixiaowu/wsr-de-youxixiaowu.github.io/raw/main/v1.2.2%20%E5%8A%A9%E6%89%8B-32%E4%BD%8D.exe">立即下载</a>
+        </div>
+
+        <!-- 原来的蓝奏云小工具 -->
+        <div class="file">
+            <div class="filename">小工具 (2MB)</div>
+            <a class="btn" href="https://wwbus.lanzouv.com/iywK03nu9vqd">立即下载</a>
+        </div>
+
     </div>
 </body>
 </html>
